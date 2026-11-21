@@ -33,9 +33,10 @@ Use `--tune` to reproduce the small parameter sweep on separate selection
 seeds. Test outputs go into ignored `.checks/` directories. The test script
 is not loaded by `main.py`.
 
-On held-out synthetic cases the entry's mean logit pinball loss was 0.467934,
-versus 0.522424 for persistence and 0.715658 for the prose curve baseline.
+On held-out synthetic cases the entry's mean logit pinball loss was 0.540304,
+versus 0.773255 for persistence and 0.646162 for the prose curve baseline.
 These simulations do not establish final-case performance. See
 [BUILD_REPORT.md](BUILD_REPORT.md) for formulas, constants, measured practice
-checks, and limitations. Local execution used Python 3.14.6; Python 3.13-slim
-execution is unverified. MIT licensed; copyright TOTE.
+checks, and limitations. Local execution used Python 3.14.6; Python 3.13.14 execution was
+verified separately with byte-identical outputs (the grader's python:3.13-slim
+container itself remains unverified). MIT licensed; copyright TOTE.
